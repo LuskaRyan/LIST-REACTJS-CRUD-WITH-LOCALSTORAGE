@@ -1,6 +1,6 @@
 .container {
   border: 1px solid black;
-  width: 30%;
+  min-width: 30%;
   margin-top: 100px;
 }
 .form {
@@ -35,17 +35,19 @@
   margin-left: 10px;
 }
 
-.item > span {
+.item > div > span {
   font-size: 30px;
   font-weight: bold;
   margin-right: 10px;
   cursor: pointer;
   transition: 0.2s;
 }
-.item > span:hover {
+.item > div > span:hover {
   color: red;
 }
 
-.textoResposta {
+.textAnswer {
   color: red;
+  display: flex;
+  justify-content: center;
 }
